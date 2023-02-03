@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <Title>DOM Manipulation</Title>
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed animi quod nam facilis vero odit dignissimos aliquam obcaecati. Cumque, dolores repellendus quos unde saepe eveniet! Officia explicabo sit voluptas voluptatibus.</p>
+    <button onclick="Change()">Change</button>
+</body>
+<script type="text/javascript">
+    function Change(){
+        var x= document.getElementById("p1");
+        var y= "Paragraph Changed"
+        document.getElementById("p1").innerHTML= y;
+    }
+</script>

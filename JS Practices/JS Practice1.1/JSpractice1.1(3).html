@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>DOM Manipulation</title>
+    <h1>Select button to change the text</h1>
+</head>
+<body>
+    <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto facilis a commodi, saepe quo nostrum tempora id facere voluptas iure, minus quos delectus! Quo maiores obcaecati at enim facilis aliquid!</p>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati amet suscipit excepturi. Optio mollitia harum fugit maxime sapiente eum corrupti autem qui necessitatibus tenetur. Perferendis rem error debitis corrupti at.</p>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora fugit veniam dolore modi repellat omnis! Totam maxime nihil dolorem accusamus at blanditiis distinctio, numquam corporis. Quaerat vitae minus optio.</p>
+    <button id="" onclick="first()">Change First Paragraph</button>
+    <button onclick="second()">Change Second Paragraph</button>
+    <button onclick="third()">Change Third Paragraph</button>
+</body>
+<script type="text/javascript">
+    function first(){
+        var string= "First Paragraph Changed";
+        document.getElementById("first").innerHTML=string
+    }
+
+    function second(){
+        var string= "Second Paragraph Changed";
+        document.getElementById("second").innerHTML=string
+    }
+
+    function third(){  
+        var string= "Third Paragraph Changed";
+        document.getElementById("third").innerHTML=string
+    }
+</script>
