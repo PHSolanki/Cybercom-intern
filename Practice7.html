@@ -3,10 +3,13 @@
     <h1>HTML Form</h1>
 </head>
 <link rel="stylesheet" href="style7.css">
+<link rel="" href="success.html">
 <body>
     <div class="margin">
-    <fieldset>
-        <legend>Your Address</legend>
+    <form action="" method="">
+
+        <fieldset>
+            <legend>Your Address</legend>
         <div class="div1">
             <table>
                 <tr>
@@ -50,7 +53,6 @@
     <fieldset>
         <legend>Interests</legend>
         <div class="div3">
-
             <table>
                 <tr >
                     <td>Hobbies</td>
@@ -76,6 +78,25 @@
                 </tr>
             </table>
         </div>
-        </fieldset>
+    </fieldset>
+    <br>
+    <button type="submit" onclick="formSubmit()">
+        submit
+    </button>
+    <button type="reset">Reset</button>
+    <br>
+    <div class="formsubmit">
+
     </div>
+</div>
+</form>
 </body>
+<script type="text/javascript">
+    function formSubmit(){
+        var x= document.write("Form submitted successfully");
+        document.getElementsByClassName("formsubmit")[0].innerHTML= x;
+    }
+</script>
+
+
+
