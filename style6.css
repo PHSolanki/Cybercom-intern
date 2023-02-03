@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+.contact{
+    margin-left: 550px;
+    margin-right: 0px;
+}
+
+form{
+    text-align: center;
+    
+}
+
+.form{
+   
+    width: 25px;
+    height: 25px;
+    justify-content: center
+}
+textarea{
+    height: 15px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}

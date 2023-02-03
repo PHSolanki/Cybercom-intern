@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <h1>HTML Form</h1>
+</head>
+<link rel="stylesheet" href="style7.css">
+<body>
+    <div class="margin">
+    <fieldset>
+        <legend>Your Address</legend>
+        <div class="div1">
+            <table>
+                <tr>
+                    <td><label for="">First Name:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name:</label></td>
+                    <td><input type="text"></td></td>
+                </tr>
+                <tr>
+                    <td><label for="">street:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">city:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Additional Details </legend>
+        <div class="div2">
+            <table>
+                <tr>
+                    <td><label for="">Biography</label></td>
+                    <td><textarea name="Biography" id="" cols="15" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Age Group</td>
+                    <td><input type="number" max="9" min="0" placeholder="0 to 9 years"></td>
+                </tr>
+            </table>
+        </div>
+        </fieldset>
+    <fieldset>
+        <legend>Interests</legend>
+        <div class="div3">
+
+            <table>
+                <tr >
+                    <td>Hobbies</td>
+                    <td class="hobby"><input type="checkbox">Cricket</td>
+                    <td ><input type="checkbox">Dancing</td>
+                    <td ><input type="checkbox">Football</td>
+                </tr>
+                <tr>
+                    <td>Favorite Car?</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Maruti</option>
+                            <option value="">Hyundai</option>
+                            <option value="">Volvo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite Public Transport?</td>
+                    <td><input type="radio" class="radio">Bus</td>
+                    <td><input type="radio" class="radio">Train</td>
+                    <td><input type="radio" class="radio">Ground</td>
+                </tr>
+            </table>
+        </div>
+        </fieldset>
+    </div>
+</body>
