@@ -10,17 +10,6 @@
     <button id="add" onclick="add()">Add</button>
     <button id="Remove" onclick="remove()">Remove</button>
 </body>
-<script type="text/javascript">
-    function add(){
-        var li=document.createElement("li");
-        li.innerHTML="item";
-        document.getElementById('mylist').appendChild(li);
-    }
+<script src="JSpractice1.1(2).js">
     
-    function remove(){
-        var mylist=document.getElementById("mylist");
-        var items= document.querySelectorAll("#mylist li")
-        mylist.removeChild(items[0]);
-        mylist.removeChild(items[items.length - 1]);
-    }
 </script>
