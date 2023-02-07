@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Health Care Insurance Form</title>
+    <h2>Information</h2>
+    <h1>Health Care Insurance</h1>
+</head>
+<link rel="stylesheet" href="style9.css">
+<script src="Practice9.js"></script>
+<body>
+    <div id="empst">
+        <fieldset>
+            <h2>EMPLOYEE STATEMENT</h2>
+            <table>
+                <tr>
+                    <td><label for="">Group Contract Number</label></td>
+                    <td><input type="text"></td>
+                    <td><label for="">Certificate Number</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Employee last name and given name</label></td>
+                    <td><input type="text"></td>
+                    <td><label for="">Date of Birth</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Employee Address</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Would you like your claims and payments deposited into your bank Account?</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Yes | I have included valid check</td> 
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <br>
+    <div id="cob">
+        <fieldset>
+            <h2>Cordination of benefits</h2>
+            <label>1. Does you are spouse and/or children have coverage under any other medical plan or contract?</label>
+            <br>
+            <input type="radio" id="check1" name="radio" onclick="yes()">Yes
+            <input type="radio" id="check2" name="radio">No
+            <div id="subdiv1">
+                <table>
+                    <tr>
+                        <td><label for="">If yes, spouse's date of birth </label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Insurance company , policy number and certificate number </label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <label for="">2. Is any expense the result of an accident?</label>
+            <br>
+            <input type="radio" id="check3" name="check">Yes
+            <input type="radio" id="check4" name="check">No
+            <div id="subdiv2">
+                <table>
+                    <tr>
+                        <td><label for="">If yes, date of accident</label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Location of accident</label></td>
+                        <td><input type="checkbox">Work
+                            <input type="checkbox">Home
+                            <input type="checkbox">Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Explain how the accident occured</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <h2>Drugs, Vision Care , Paramedical Servises and others-patient Information</h2>
+        <table id="drug">
+                <th class="ta1">Patient's name</th>
+                <th class="ta1">Date of birth</th>
+                <th class="ta1">Relationship to plan member</th>
+                <th class="ta1">Total charge</th>    
+        </table>
+    </div>
+</body>
