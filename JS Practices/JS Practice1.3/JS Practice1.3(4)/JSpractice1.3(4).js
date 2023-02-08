@@ -1,4 +1,18 @@
-let arr=["Priyanshu","Devam","Virat","Priyanshu"]
+var arr=["Priyanshu","Devam","Virat","Priyanshu"]
+
+function removeDuplicates(array){
+    for(var i=0; i<array.length ; i++){
+        for(var j=0; j<i; j++){
+            if(array[i]==array[j]){
+               array.splice(i,1)
+            }                   
+        }
+    }
+    console.log(array);
+}
+
+removeDuplicates(arr)
+
 
 
 

@@ -42,7 +42,7 @@
             <h2>Cordination of benefits</h2>
             <label>1. Does you are spouse and/or children have coverage under any other medical plan or contract?</label>
             <br>
-            <input type="radio" id="check1" name="radio" onclick="yes()">Yes
+            <input type="radio" id="check1" name="radio" onclick="spouseyes()">Yes
             <input type="radio" id="check2" name="radio">No
             <div id="subdiv1">
                 <table>
@@ -85,10 +85,11 @@
     <div>
         <h2>Drugs, Vision Care , Paramedical Servises and others-patient Information</h2>
         <table id="drug">
-                <th class="ta1">Patient's name</th>
-                <th class="ta1">Date of birth</th>
-                <th class="ta1">Relationship to plan member</th>
-                <th class="ta1">Total charge</th>    
+                <th class="ta1" id="tabletext">Patient's name</th>
+                <th class="ta1" id="tabledate">Date of birth</th>
+                <th class="ta1" id="relationtext">Relationship to plan member</th>
+                <th class="ta1" id="charges">Total charge</th>    
         </table>
+        <button onclick="add()">ADD</button> &nbsp;&nbsp;<button type="reset" onclick="resetdata()">Reset</button>
     </div>
 </body>
