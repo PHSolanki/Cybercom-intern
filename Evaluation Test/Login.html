@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <h1>Login</h1>
+</head>
+<script src="Login.js"></script>
+<style>
+    h1,h4{
+        text-align: center;
+    }
+    div{
+        margin-left: 640px;
+        margin-right: 625px;
+        padding: 20px;
+        background-color: lightgoldenrodyellow;
+        border: solid black 2px;
+    }
+    button{
+        background-color: rgb(255, 204, 0);
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    button{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div>
+        <input type="Email" placeholder="Email" id="Email">
+        <br><br>
+        <input type="password" placeholder="password" id="pass">
+        <br><br>
+        <button type="button" onclick="login()">Login</button>
+        <br>
+        <h4 id="or">OR</h4>
+        <button type="button" id="register" onclick="onRegister()">Register Now</button>    
+    </div>
+</body>

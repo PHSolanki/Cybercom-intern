@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>Dashboard</title>
+</head>
+<style>
+    .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(202, 117, 33);
+  padding-top: 20px;
+  
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #100f0f;
+  display: block;
+}
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+.submain{
+    display: flex;
+    justify-content: space-around;
+}
+.subdiv1{
+    border: 2px solid black;
+    background-color: lightsalmon;
+    padding: 10px;
+}
+.subdiv2{
+    border: 2px solid black;
+    background-color: plum;
+    padding: 10px;
+}
+.subdiv3{
+    border: 2px solid black;
+    background-color: rgb(202, 122, 179);
+    padding: 10px;
+}
+p{
+    text-align: center;
+}
+
+
+</style>
+<body>
+    <div class="sidenav">
+        Hello,<span id="username"></span>
+        <br><br><br>
+        <a href="./Dashboard.html">Dashboard</a><br><br>
+        <a href="./Users.html">Users</a><br><br>
+        <a href="./UserSession.html">Login session</a><br><br>
+        <a href="./Login.html">Logout</a><br><br>
+    </div>
+    <div class="main">
+        <h1>Dashboard</h1>
+        <div class="submain">
+            <div class="subdiv1">
+                <label for="">User < 18 years</label><br>
+                <label for="" id="less18"></label>
+            </div>
+            <div class="subdiv2">
+                <label for="">18-50 years Users</label><br>
+                <label for="" id="18to50"></label>
+            </div>
+            <div class="subdiv3">
+                <label for="">User > 50 years</label><br>
+                <label for="" id="above50"></label>
+            </div>
+        </div><br><br>
+        <p id="displayBirthday"></p>
+    </div>
+    <script src="Dashboard.js"></script>
+</body>

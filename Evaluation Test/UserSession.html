@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>User Session</title>
+</head>
+<style>
+    .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(202, 117, 33);
+  padding-top: 20px; 
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #100f0f;
+  display: block;
+}
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+#myTable{
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-style: solid;
+  padding: 10px;
+}
+th{
+  border: 2px solid black;
+  padding: 10px;
+}
+</style>
+<script src="Usersession.js"></script>
+<body onload="cells()">
+    <div class="sidenav">
+      Hello,<span id="username"></span>
+        <br><br><br>
+        <a href="./Dashboard.html">Dashboard</a><br><br>
+        <a href="./Users.html">Users</a><br><br>
+        <a href="./UserSession.html">Login session</a><br><br>
+        <a onclick="logOut()">Logout</a><br><br>
+    </div>
+    <div class="main">
+      <h2>User Session Logs</h2>
+      <table id="myTable" >
+        <tr>
+            <th>Name</th>
+            <th>Login Date Time</th>
+            <th>Logout Date Time</th>
+        </tr>
+      </table>
+    </div>
+    <script src="Usersession.js"></script>
+</body>

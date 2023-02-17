@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration</title>
+    <h1>Registration</h1>
+</head>
+<script src="Registration.js"></script>
+<style>
+    h1{
+        text-align: center;
+    }
+    div{
+        margin-left: 610px;
+        margin-right: 610px;
+        padding: 20px;
+        background-color: lightgoldenrodyellow;
+        border: solid black 2px;
+        margin-top: 50px;
+    }
+    button{
+        background-color: gold;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+    }
+</style>
+<body>
+    <div>
+        <input type="text" placeholder="Name" id="name" class="form" required><br><br>
+        <input type="email" placeholder="Email" id="email" class="form" required><br><br>
+        <input type="password" placeholder="Password" id="password" class="form" required><br><br>
+        <input type="password" placeholder="Confirm Password" id="cpassword" class="form" required><br><br>
+        <select name="city" id="city" class="" required>
+            <option value="" disabled selected>Select City</option>
+            <option value="">Ahmedabad</option>
+            <option value="">Baroda</option>
+        </select><br><br>
+        <select name="state" id="state" class="" required>
+            <option value=""disabled selected>Select State</option>
+            <option value="" >MP</option>
+            <option value="">UP</option>
+        </select><br><br>
+        <input type="checkbox" id="checkbox" required>Terms & Conditions <br><br>
+        <button type="button" onclick="subRegister()">Register</button>
+    </div>   
+</body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Sub-user login</title>
+</head>
+<script src="sub-userlogin.js"></script>
+<style>
+    .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(202, 117, 33);
+  padding-top: 20px;
+  
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #100f0f;
+  display: block;
+}
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+</style>
+<body>
+    <div class="sidenav">  
+        Hello,<span id="username"></span>
+        <a href="sub-userdashboard.html">Dashboard</a>
+        <a onclick="logOut()">Logout</a> 
+    </div>
+    <div id="main">
+        <h3>Welcome To Cybercom</h3>
+        <span id="displayBirthday"></span>
+    </div>
+        <script src="sub-userlogin.js"></script>
+</body>
