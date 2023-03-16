@@ -1,0 +1,16 @@
+<h1> <b>Get In Touch </b> </h1>
+<h3>Reach out to us & we will respond as soon as we can</h3>
+
+<div class="inputfields">
+    <form [formGroup]="contactUsform" (ngSubmit)="contactUs()">
+        <input type="text" placeholder="Name" formControlName="userName">
+        <input type="text" placeholder="Email" formControlName="userEmail">
+        <input type="text" placeholder="Phone" formControlName="userPhone"><br><br>
+        <span  style="color: red;" *ngIf="Name && Name.invalid && Name.touched">Please Enter valid Name</span>
+        <span  style="color: red;" *ngIf="Email && Email.invalid && Email.touched">Please Enter valid Email</span>
+        <span  style="color: red;" *ngIf="phone && phone.invalid && phone.touched">Please Enter valid Phone Number</span><br><br>
+        <textarea name="" id="" cols="30" rows="10" formControlName="userMessage" placeholder="Message"></textarea><br><br>
+        <span  style="color: red;" *ngIf="message && message.invalid && message.touched">Please Enter message</span><br><br>
+        <button type="submit" [disabled]="contactUsform.invalid">Submit</button>
+    </form>
+</div>

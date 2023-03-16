@@ -1,0 +1,66 @@
+<h1>EMI Loan Calculator</h1>
+
+<div class="main-container">
+
+    <div class="container1">
+        <label for=""  >Enter Loan Amount:{{principal_loan_amount}}</label><br>
+        <input type="range" [(ngModel)]="principal_loan_amount" min="100000" max="5000000" placeholder="Enter Principal Amount" (input)="result()" ><br><br>
+        <label for="">Enter number of months:{{loan_tenure}}</label><br>
+        <input type="range" [(ngModel)]="loan_tenure" min="120" max="360" placeholder="Enter Tenure" (input)="result()" ><br><br>
+        <label for="">Enter Rate of interests:{{rate}}</label><br>
+        <input type="range" [(ngModel)]="rate" min="8" max="16" placeholder="Rate of Interests" step="0.05"   (input)="result()"><br><br>
+    </div>
+
+    <div class="container2">
+
+        <div class="subdiv1">
+            <p><b>Monthly EMI</b></p>
+            <p>{{(resultAmount).toFixed(2)}}</p>
+        </div>
+
+        <div class="subdiv2">
+            <p><b>amount interset</b></p>
+            <p>{{(IntersetAmount).toFixed(2)}}</p>
+        </div>
+
+        <div class="subdiv3">
+            <p><b>Payable Amount</b></p>
+            <p>{{(PayableAmount).toFixed(2)}}</p>
+        </div>
+
+        <div class="subdiv4">
+            <p><b>Interest Percentage</b></p>
+            <p>{{(InterestPercentage)}}%</p>
+        </div>
+        
+    </div>
+
+</div>
+
+<br><br>
+
+
+<div class="container_table">
+    <table border="1">
+        <thead>
+          <tr>
+              <th>Payment No.</th>
+              <th>Begining Balance</th>
+              <th>EMI</th>
+              <th>Principal</th>
+              <th>Interest</th>
+              <th>Ending Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of tableData()">
+            <td>{{item.index}}</td>
+            <td>{{item.one}}</td>
+            <td>{{item.two}}</td>
+            <td>{{item.three}}</td>
+            <td>{{item.four}}</td>
+            <td>{{item.five}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>       
