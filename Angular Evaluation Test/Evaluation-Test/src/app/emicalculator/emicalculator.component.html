@@ -8,7 +8,7 @@
         <label for="">Enter number of months:{{loan_tenure}}</label><br>
         <input type="range" [(ngModel)]="loan_tenure" min="120" max="360" placeholder="Enter Tenure" (input)="result()" ><br><br>
         <label for="">Enter Rate of interests:{{rate}}</label><br>
-        <input type="range" [(ngModel)]="rate" min="8" max="16" placeholder="Rate of Interests" step="0.05"   (input)="result()"><br><br>
+        <input type="range" [(ngModel)]="rate" min="8" max="16" placeholder="Rate of Interests" step="0.05" (input)="result()"><br><br>
     </div>
 
     <div class="container2">
@@ -40,8 +40,8 @@
 <br><br>
 
 
-<div class="container_table">
-    <table border="1">
+<div class="table-responsive">
+    <table border="1" class="table">
         <thead>
           <tr>
               <th>Payment No.</th>

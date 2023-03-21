@@ -18,10 +18,10 @@ h1{
     padding: 50px;
 }
 
-.container_table{
+/* .container_table{
     display: flex;
     justify-content: center;
-}
+} */
 
 th,td{
     padding: 10px;
